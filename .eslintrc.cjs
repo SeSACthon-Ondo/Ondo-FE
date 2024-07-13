@@ -17,5 +17,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "no-undef": "off",  // 정의되지 않은 변수에 대한 경고를 비활성화
+    "no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }]  // 사용되지 않는 변수에 대한 경고를 비활성화 또는 경고로 설정
   },
 }
